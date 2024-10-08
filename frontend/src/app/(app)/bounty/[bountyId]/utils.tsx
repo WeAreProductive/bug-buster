@@ -1,4 +1,4 @@
-import { AppBounty } from "../../../model/state";
+import { AppBounty } from "../../../../model/state";
 
 export type BountyParams = {
     params: { bountyId: string };

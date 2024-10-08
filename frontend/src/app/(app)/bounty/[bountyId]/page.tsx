@@ -20,23 +20,23 @@ import {
     useBounty,
     useInput,
     isInput,
-} from "../../../model/reader";
-import { getBountyTotalPrize, AppBounty } from "../../../model/state";
-import { SendExploit } from "../../../model/inputs";
-import { usePrepareWithdrawSponsorship } from "../../../hooks/bug-buster";
-import { useInputBoxAddInput } from "../../../hooks/contracts";
+} from "../../../../model/reader";
+import { getBountyTotalPrize, AppBounty } from "../../../../model/state";
+import { SendExploit } from "../../../../model/inputs";
+import { usePrepareWithdrawSponsorship } from "../../../../hooks/bug-buster";
+import { useInputBoxAddInput } from "../../../../hooks/contracts";
 
 import { BountyParams, ConcreteBountyParams } from "./utils";
-import { useBlockTimestamp } from "../../../hooks/block";
-import { BountyStatus } from "../../../model/bountyStatus";
-import { getBountyStatus } from "../../../utils/bounty";
-import { useErc20Metadata, formatErc20Amount } from "../../../utils/erc20";
-import { BountyStatusBadgeGroup } from "../../../components/bountyStatus";
-import { ProfileCard } from "../../../components/profileCard";
-import { LinkButton } from "../../../components/linkbtn";
+import { useBlockTimestamp } from "../../../../hooks/block";
+import { BountyStatus } from "../../../../model/bountyStatus";
+import { getBountyStatus } from "../../../../utils/bounty";
+import { useErc20Metadata, formatErc20Amount } from "../../../../utils/erc20";
+import { BountyStatusBadgeGroup } from "../../../../components/bountyStatus";
+import { ProfileCard } from "../../../../components/profileCard";
+import { LinkButton } from "../../../../components/linkbtn";
 import Link from "next/link";
-import { HasConnectedAccount } from "../../../components/hasConnectedAccount";
-import { transactionStatus } from "../../../utils/transactionStatus";
+import { HasConnectedAccount } from "../../../../components/hasConnectedAccount";
+import { transactionStatus } from "../../../../utils/transactionStatus";
 
 const WithdrawButton: FC<{
     bountyIndex: number;

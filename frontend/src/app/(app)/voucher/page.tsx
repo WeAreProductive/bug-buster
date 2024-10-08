@@ -20,13 +20,13 @@ import {
     useWaitForTransaction,
 } from "wagmi";
 
-import { useVouchers } from "../../model/reader";
-import { Voucher } from "../../utils/voucher";
-import { decodeVoucher } from "../../utils/voucher";
-import { getDAppAddress } from "../../utils/address";
-import { voucherExecutionAbi, dummyProof } from "../../utils/voucher";
-import { useErc20Metadata, formatErc20Amount } from "../../utils/erc20";
-import { transactionStatus } from "../../utils/transactionStatus";
+import { useVouchers } from "../../../model/reader";
+import { Voucher } from "../../../utils/voucher";
+import { decodeVoucher } from "../../../utils/voucher";
+import { getDAppAddress } from "../../../utils/address";
+import { voucherExecutionAbi, dummyProof } from "../../../utils/voucher";
+import { useErc20Metadata, formatErc20Amount } from "../../../utils/erc20";
+import { transactionStatus } from "../../../utils/transactionStatus";
 
 const WithdrawButton: FC<{ voucher: Voucher }> = ({ voucher }) => {
     const { data: wasExecuted, error: wasExecutedError } = useContractRead({

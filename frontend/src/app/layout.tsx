@@ -8,9 +8,9 @@ import Head from "next/head";
 import GraphQLProvider from "../providers/graphqlProvider";
 import StyleProvider from "../providers/styleProvider";
 import WalletProvider from "../providers/walletProvider";
-import { Shell } from "./shell";
 
 import { Analytics } from "@vercel/analytics/react";
+import Template from "./template";
 // import { SWRConfig } from "swr";
 
 // const fetcher = async <JSON = any,>(
@@ -31,10 +31,8 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
                 <GraphQLProvider>
                     <StyleProvider>
                         <WalletProvider>
-                            <Shell>
-                                {children}
-                                <Analytics />
-                            </Shell>
+                            {children}
+                            <Analytics />
                         </WalletProvider>
                     </StyleProvider>
                 </GraphQLProvider>

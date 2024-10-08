@@ -10,7 +10,7 @@ import {
 } from "@mantine/core";
 import { FC } from "react";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
-import { HasConnectedAccount } from "../components/hasConnectedAccount";
+import { HasConnectedAccount } from "../../components/hasConnectedAccount";
 import { useMediaQuery } from "@mantine/hooks";
 
 const breakPoint = "(min-width: 700px)";

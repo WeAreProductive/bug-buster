@@ -16,18 +16,18 @@ import { useWaitForTransaction, useAccount } from "wagmi";
 import { parseUnits } from "viem";
 
 import { BountyParams, ConcreteBountyParams } from "../utils.tsx";
-import { usePrepareAddSponsorship } from "../../../../hooks/bug-buster";
+import { usePrepareAddSponsorship } from "../../../../../hooks/bug-buster";
 import {
     erc20PortalAddress,
     useErc20PortalDepositErc20Tokens,
     usePrepareErc20Approve,
     useErc20Approve,
-} from "../../../../hooks/contracts";
-import { AddSponsorship } from "../../../../model/inputs";
-import { useBounty } from "../../../../model/reader";
-import { isPositiveNumber } from "../../../../utils/form";
-import { transactionStatus } from "../../../../utils/transactionStatus";
-import { useErc20Metadata, useErc20UserData } from "../../../../utils/erc20";
+} from "../../../../../hooks/contracts";
+import { AddSponsorship } from "../../../../../model/inputs";
+import { useBounty } from "../../../../../model/reader";
+import { isPositiveNumber } from "../../../../../utils/form";
+import { transactionStatus } from "../../../../../utils/transactionStatus";
+import { useErc20Metadata, useErc20UserData } from "../../../../../utils/erc20";
 
 const AddSponsorshipForm: FC<ConcreteBountyParams> = ({
     bountyIndex,

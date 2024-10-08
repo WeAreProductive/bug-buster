@@ -14,13 +14,13 @@ import {
     Group,
 } from "@mantine/core";
 import Link from "next/link";
-import { useLatestState } from "../../model/reader";
-import { AppBounty } from "../../model/state";
-import { BountyStatusBadgeGroup } from "../../components/bountyStatus";
-import { HasConnectedAccount } from "../../components/hasConnectedAccount";
-import { useBlockTimestamp } from "../../hooks/block";
-import { getBountyStatus } from "../../utils/bounty";
-import { GOOGLE_BOUNTY_CREATION_FORM_URL } from "../../utils/links";
+import { useLatestState } from "../../../model/reader";
+import { AppBounty } from "../../../model/state";
+import { BountyStatusBadgeGroup } from "../../../components/bountyStatus";
+import { HasConnectedAccount } from "../../../components/hasConnectedAccount";
+import { useBlockTimestamp } from "../../../hooks/block";
+import { getBountyStatus } from "../../../utils/bounty";
+import { GOOGLE_BOUNTY_CREATION_FORM_URL } from "../../../utils/links";
 
 const Bounty: FC<{
     index: number;

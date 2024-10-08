@@ -1,6 +1,6 @@
 import { Anchor, Group, Stack, Text, Title, Center } from "@mantine/core";
 import { FC } from "react";
-import { TELEGRAM_CHANNEL_URL, X_ACCOUNT_URL } from "../../utils/links";
+import { TELEGRAM_CHANNEL_URL, X_ACCOUNT_URL } from "../../../utils/links";
 
 const WordsOfCaution: FC = () => {
     return (
